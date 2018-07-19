@@ -6,8 +6,14 @@ var app = express();
 // var appHelpers = {};
 app.use(express.static(__dirname + '/static'));
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 //to get list of all timezons
-app.get('/assigned-store-list', function(req, res) {
+app.get('/assigned-store-list', function(req, res, next) {
 
   var storeArray  = [
     { id: 11, name: 'Melrose' },
@@ -15,7 +21,7 @@ app.get('/assigned-store-list', function(req, res) {
     { id: 13, name: 'Santa Monica' },
     { id: 14, name: 'East Hollywood' }
   ];
-
+  
   res.send({
    "msg": "Store data",
    "success": true,
@@ -24,7 +30,7 @@ app.get('/assigned-store-list', function(req, res) {
 });
 
 //to employees list
-app.get('/get-employee-list', function(req, res) {
+app.get('/get-employee-list', function(req, res, next) {
 
   var empArray  = [
       {key:1, label:"Unassigned", open: true, children: [
@@ -76,7 +82,7 @@ app.get('/get-employee-list', function(req, res) {
 
 
 //get events
-app.get('/get-wekly-events', function(req, res) {
+app.get('/get-wekly-events', function(req, res, next) {
 
   var weeklyEvents  = [
       { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:20},
@@ -114,7 +120,7 @@ var storeOpeningHours = [
 
 
 //error api
-app.get('/error-occured', function(req, res) {
+app.get('/error-occured', function(req, res, next) {
 
   res.send({
    "msg": "Something went wrong while getting weekly schedule. Please try again.",
@@ -124,7 +130,7 @@ app.get('/error-occured', function(req, res) {
 });
 
 //profile page
-app.get('/profile-details', function(req, res) {
+app.get('/profile-details', function(req, res, next) {
 
   var profileArray  = {
     id: 11,
