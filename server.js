@@ -85,13 +85,13 @@ app.get('/get-employee-list', function(req, res, next) {
 app.get('/get-wekly-events', function(req, res, next) {
 
   var weeklyEvents  = [
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:20},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:40},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:50},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:60},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:70},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:80},
-      { start_date: "2018-07-16 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:90},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:20},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:40},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:50},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:60},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:70},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:80},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-16 24:00", text:"9AM - 6PM", section_id:90},
 
       { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"9AM - 6PM", section_id:40},
       { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"9AM - 6PM", section_id:50},
