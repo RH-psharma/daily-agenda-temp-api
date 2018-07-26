@@ -138,7 +138,7 @@ app.get('/get-wekly-events', function(req, res, next) {
       { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"vacation", section_id:60},
       { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"[09:00AM - 06:00PM]", section_id:70},
       { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"[09:00AM - 06:00PM]", section_id:80},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"[09:00AM - 06:00PM,,08:00PM - 11:00PM]", section_id:90},
+      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"[09:00AM - 06:00PM,08:00PM - 11:00PM]", section_id:90},
 
       { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"temporary", section_id:40},
       { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"[09:00AM - 06:00PM]", section_id:50},
