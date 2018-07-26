@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 });
 
 //to get list of all timezons
-app.get('/assigned-store-list', function(req, res, next) {
+app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 
   var storeArray  = [
     { id: 11, name: 'Melrose' },
