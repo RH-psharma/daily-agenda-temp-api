@@ -30,7 +30,7 @@ app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 });
 
 //to employees list
-app.get('/get-employee-list', function(req, res, next) {
+app.get('/associates/11', function(req, res, next) {
 
   var empArray  = [
      
@@ -78,6 +78,55 @@ app.get('/get-employee-list', function(req, res, next) {
   });
 });
 
+
+//to employees list
+app.get('/associates/12', function(req, res, next) {
+
+  var empArray  = [
+     
+{key:2, label:"Field Leader", open: true, children: [
+{key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+]},
+{key:3, label:"Leadership", open:true, children: [
+{key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
+{key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Williams,40"},
+{key:50, label:"https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,32"},
+{key:60, label:"https://semantic-ui.com/images/avatar2/large/molly.png,Linda,Brown,40"},
+{key:70, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,George,Luca,40"}
+      ]},
+      {key:4, label:"Floor Coverage", open: true, children: [
+        {key:100, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:110, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]},
+      {key:5, label:"Design Team", open: true, children: [
+        {key:120, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:130, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]},
+      {key:6, label:"Trade Team", open: true, children: [
+        {key:140, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:150, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]},
+      {key:7, label:"Support Team", open: true, children: [
+        {key:160, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:170, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]},
+      {key:8, label:"Curating Team", open: true, children: [
+        {key:180, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:190, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]},
+      {key:9, label:"Facilities Team", open: true, children: [
+        {key:200, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:210, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+      ]}
+    ];
+
+  res.send({
+   "msg": "Store data",
+   "success": true,
+   "employees": empArray
+  });
+});
 
 //get events
 app.get('/get-wekly-events', function(req, res, next) {
