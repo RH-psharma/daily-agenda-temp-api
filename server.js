@@ -33,9 +33,7 @@ app.get('/assigned-store-list', function(req, res, next) {
 app.get('/get-employee-list', function(req, res, next) {
 
   var empArray  = [
-      {key:1, label:"Unassigned", open: true, children: [
-        {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Unassigned"}
-      ]},
+     
 {key:2, label:"Field Leader", open: true, children: [
 {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
 {key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Williams,40"},
