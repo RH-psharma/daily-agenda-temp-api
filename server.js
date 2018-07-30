@@ -132,20 +132,29 @@ app.get('/associates/12', function(req, res, next) {
 app.get('/get-wekly-events', function(req, res, next) {
 
   var weeklyEvents  = [
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"09:00AM - 06:00PM", section_id:20},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"sick", section_id:40},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"09:00AM - 06:00PM", section_id:50},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"vacation", section_id:60},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"09:00AM - 06:00PM", section_id:70},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"09:00AM - 06:00PM", section_id:80},
-      { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"09:00AM - 06:00PM,08:00PM - 11:00PM", section_id:90},
-    { start_date: "2018-07-24 00:00", end_date: "2018-07-24 24:00", text:"temporary", section_id:110},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:20},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"sick", section_id:40},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:50},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"vacation", section_id:60},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:70},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:80},
+      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM,08:00PM - 11:00PM", section_id:90},
+    { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"temporary", section_id:110},
 
-      { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"temporary", section_id:40},
-      { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"[09:00AM - 06:00PM]", section_id:50},
-      { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"[09:00AM - 06:00PM]", section_id:60},
-      { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"[09:00AM - 06:00PM]", section_id:80},
-      { start_date: "2018-07-18 00:00", end_date: "2018-07-18 24:00", text:"[09:00AM - 06:00PM,08:00PM - 11:00PM]", section_id:90}
+      { start_date: "2018-08-01 00:00", end_date: "2018-08-01 24:00", text:"temporary", section_id:40},
+      { start_date: "2018-08-01 00:00", end_date: "2018-08-01 24:00", text:"[09:00AM - 06:00PM]", section_id:50},
+      { start_date: "2018-08-01 00:00", end_date: "2018-08-01 24:00", text:"[09:00AM - 06:00PM]", section_id:60},
+      { start_date: "2018-08-01 00:00", end_date: "2018-08-01 24:00", text:"[09:00AM - 06:00PM]", section_id:80},
+      { start_date: "2018-08-01 00:00", end_date: "2018-08-01 24:00", text:"[09:00AM - 06:00PM,08:00PM - 11:00PM]", section_id:90},
+
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM", section_id:20},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"sick", section_id:40},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM", section_id:50},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"vacation", section_id:60},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM", section_id:70},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM", section_id:80},
+      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM,08:00PM - 11:00PM", section_id:90},
+    { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"temporary", section_id:110},
 ];
 var storeOpeningHours = [
 {date:"2018-07-15", opening_hours:"9AM - 6PM"},
