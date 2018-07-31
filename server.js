@@ -36,7 +36,7 @@ app.get('/associates/11', function(req, res, next) {
      
 {key:2, label:"Field Leader", open: true, children: [
 {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
-{key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Williams,40"},
+{key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe,40"},
 {key:50, label:"https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,32"},
 {key:60, label:"https://semantic-ui.com/images/avatar2/large/molly.png,Linda,Brown,40"},
 {key:70, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,George,Luca,40"}
@@ -86,7 +86,7 @@ app.get('/associates/12', function(req, res, next) {
      
 {key:2, label:"Field Leader", open: true, children: [
 {key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
-{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,John,Doe,40"}
 ]},
 {key:3, label:"Leadership", open:true, children: [
 {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
