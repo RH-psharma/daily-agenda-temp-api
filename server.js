@@ -132,7 +132,7 @@ app.get('/associates/12', function(req, res, next) {
 app.get('/get-wekly-events', function(req, res, next) {
 
   var weeklyEvents  = [
-      { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:20},
+      
       { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"sick", section_id:40},
       { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"09:00AM - 06:00PM", section_id:50},
       { start_date: "2018-07-31 00:00", end_date: "2018-07-31 24:00", text:"vacation", section_id:60},
