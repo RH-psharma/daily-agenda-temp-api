@@ -197,15 +197,16 @@ app.get('/get-wekly-events', function(req, res, next) {
       { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"09:00AM - 06:00PM,08:00PM - 11:00PM", section_id:90},
     { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"temporary", section_id:110},
 ];
-var storeOpeningHours = [
-{date:"2018-07-15", opening_hours:"9AM - 6PM"},
-{date:"2018-07-16", opening_hours:"9AM - 6PM"},
-{date:"2018-07-17", opening_hours:"9AM - 6PM"},
-{date:"2018-07-18", opening_hours:"9AM - 6PM"},
-{date:"2018-07-19", opening_hours:"9AM - 6PM"},
-{date:"2018-07-20", opening_hours:"8AM - 6PM"},
-{date:"2018-07-21", opening_hours:"9AM - 6PM"}
-];
+var storeOpeningHours = {
+	"2018-07-29": "9AM - 6PM",
+	"2018-07-30": "9AM - 6PM",
+	"2018-07-31": "9AM - 6PM",
+	"2018-08-01": "9AM - 6PM",
+	"2018-08-02": "8AM - 6PM",
+	"2018-08-03": "9AM - 6PM",
+	"2018-08-04": "9AM - 6PM",
+
+}
 
 
   res.send({
