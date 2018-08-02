@@ -29,7 +29,7 @@ app.get('/store-opening-hours', function(req, res, next) {
   res.send({
    "msg": "Store data",
    "success": true,
-   "stores": storeHours
+   "storeHours": storeHours
   });
 });
 
