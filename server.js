@@ -13,6 +13,27 @@ app.use(function(req, res, next) {
 });
 
 //to get list of all timezons
+app.get('/store-opening-hours', function(req, res, next) {
+
+  var storeOpeningHours = {
+	date: "2018-07-29", time: "9AM - 6PM",
+	date: "2018-07-30", time: "9AM - 6PM",
+	date: "2018-07-31", time: "9AM - 6PM",
+	date: "2018-08-01", time: "9AM - 6PM",
+	date: "2018-08-02", time: "8AM - 6PM",
+	date: "2018-08-03", time: "9AM - 6PM",
+	date: "2018-08-04", time: "9AM - 6PM",
+
+}
+  
+  res.send({
+   "msg": "Store data",
+   "success": true,
+   "stores": storeHours
+  });
+});
+
+//to get list of all timezons
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 
   var storeArray  = [
