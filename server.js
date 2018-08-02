@@ -16,20 +16,20 @@ app.use(function(req, res, next) {
 app.get('/store-opening-hours', function(req, res, next) {
 
   var storeOpeningHours = {
-	date: "2018-07-29", start_time: "9AM", end_time:"6PM",
-	date: "2018-07-30", start_time: "9AM", end_time:"6PM",
-	date: "2018-07-31", start_time: "9AM", end_time:"6PM",
-	date: "2018-08-01", start_time: "9AM", end_time:"6PM",
-	date: "2018-08-02", start_time: "8AM", end_time:"6PM",
-	date: "2018-08-03", start_time: "9AM", end_time:"6PM",
-	date: "2018-08-04", start_time: "9AM", end_time:"6PM"
+  date: "2018-07-29", start_time: "9AM", end_time:"6PM",
+  date: "2018-07-30", start_time: "9AM", end_time:"6PM",
+  date: "2018-07-31", start_time: "9AM", end_time:"6PM",
+  date: "2018-08-01", start_time: "9AM", end_time:"6PM",
+  date: "2018-08-02", start_time: "8AM", end_time:"6PM",
+  date: "2018-08-03", start_time: "9AM", end_time:"6PM",
+  date: "2018-08-04", start_time: "9AM", end_time:"6PM"
 
 }
   
   res.send({
    "msg": "Store data",
    "success": true,
-   "storeHours": storeOpeningHours 
+   "storeHours": storeHours
   });
 });
 
@@ -54,38 +54,40 @@ app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 app.get('/associates/11', function(req, res, next) {
 
   var empArray  = [
-{key:3, label:"Leadership", open:true, children: [
-	{key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
+     
+{key:2, label:"Field Leader", open: true, children: [
+{key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
 {key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe,40"},
 {key:50, label:"https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,32"},
 {key:60, label:"https://semantic-ui.com/images/avatar2/large/molly.png,Linda,Brown,40"},
 {key:70, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,George,Luca,40"}
+]},
+{key:3, label:"Leadership", open:true, children: [
 {key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
 {key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
       ]},
-      {key:4, label:"Design Experience", open: true, children: [
+      {key:4, label:"Floor Coverage", open: true, children: [
         {key:100, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,William,Moss,40"},
 {key:110, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,David,40"}
       ]},
-      {key:5, label:"Design Atelier", open: true, children: [
+      {key:5, label:"Design Team", open: true, children: [
         {key:120, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Bob,Moss,40"},
 {key:130, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Mike,Fossey,40"}
       ]},
-      {key:6, label:"Trade", open: true, children: [
+      {key:6, label:"Trade Team", open: true, children: [
         {key:140, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Ross,Moss,40"},
 {key:150, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Diana,Fossey,40"}
       ]},
-      {key:7, label:"Client Services", open: true, children: [
+      {key:7, label:"Support Team", open: true, children: [
         {key:160, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Ketty,Moss,40"},
 {key:170, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Blessy,Fossey,40"}
       ]},
-      {key:8, label:"Support", open: true, children: [
+      {key:8, label:"Curating Team", open: true, children: [
         {key:180, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Jobin,Moss,40"},
 {key:190, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Jerry,Fossey,40"}
       ]},
-      {key:9, label:"Curating ", open: true, children: [
-        {key:200, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"}
-]}, {key:10, label:"Facilities ", open: true, children: [
+      {key:9, label:"Facilities Team", open: true, children: [
+        {key:200, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
 {key:210, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
       ]}
     ];
@@ -217,13 +219,13 @@ app.get('/get-wekly-events', function(req, res, next) {
     { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"temporary", section_id:110},
 ];
 var storeOpeningHours = {
-	"2018-07-29": "9AM - 6PM",
-	"2018-07-30": "9AM - 6PM",
-	"2018-07-31": "9AM - 6PM",
-	"2018-08-01": "9AM - 6PM",
-	"2018-08-02": "8AM - 6PM",
-	"2018-08-03": "9AM - 6PM",
-	"2018-08-04": "9AM - 6PM",
+  "2018-07-29": "9AM - 6PM",
+  "2018-07-30": "9AM - 6PM",
+  "2018-07-31": "9AM - 6PM",
+  "2018-08-01": "9AM - 6PM",
+  "2018-08-02": "8AM - 6PM",
+  "2018-08-03": "9AM - 6PM",
+  "2018-08-04": "9AM - 6PM",
 
 }
 
@@ -267,5 +269,3 @@ app.get('/profile-details', function(req, res, next) {
 });
 
 app.listen(process.env.PORT || 8000);
-
-
