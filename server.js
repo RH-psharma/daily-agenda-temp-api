@@ -211,7 +211,8 @@ var storeOpeningHours = [
   res.send({
    "msg": "Weekly event",
    "success": true,
-   "stores": weeklyEvents
+   "weeklyEvents": weeklyEvents,
+    "storeHours": storeOpeningHours
   });
 });
 
