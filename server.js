@@ -16,13 +16,13 @@ app.use(function(req, res, next) {
 app.get('/store-opening-hours', function(req, res, next) {
 
   var storeOpeningHours = {
-	date: "2018-07-29", time: "9AM - 6PM",
-	date: "2018-07-30", time: "9AM - 6PM",
-	date: "2018-07-31", time: "9AM - 6PM",
-	date: "2018-08-01", time: "9AM - 6PM",
-	date: "2018-08-02", time: "8AM - 6PM",
-	date: "2018-08-03", time: "9AM - 6PM",
-	date: "2018-08-04", time: "9AM - 6PM",
+	date: "2018-07-29", start_time: "9AM", end_time:"6PM",
+	date: "2018-07-30", start_time: "9AM", end_time:"6PM",
+	date: "2018-07-31", start_time: "9AM", end_time:"6PM",
+	date: "2018-08-01", start_time: "9AM", end_time:"6PM",
+	date: "2018-08-02", start_time: "8AM", end_time:"6PM",
+	date: "2018-08-03", start_time: "9AM", end_time:"6PM",
+	date: "2018-08-04", start_time: "9AM", end_time:"6PM"
 
 }
   
