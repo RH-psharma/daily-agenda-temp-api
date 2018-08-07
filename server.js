@@ -234,7 +234,7 @@ app.get('/error-occured', function(req, res, next) {
 });
 
 //profile page
-app.get('/profile-details', function(req, res, next) {
+app.get('/profile-detail', function(req, res, next) {
 
   var profileArray  = {
     id: 11,
