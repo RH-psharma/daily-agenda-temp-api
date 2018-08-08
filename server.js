@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 });
 
 //to get list of all timezons
-app.get('/store-opening-hours', function(req, res, next) {
+app.get('/store-opening-hour', function(req, res, next) {
 
   var storeOpeningHours = [
     {date: "2018-08-05", start_time: "9AM", end_time:"6PM"},
@@ -234,7 +234,7 @@ app.get('/error-occured', function(req, res, next) {
 });
 
 //profile page
-app.get('/profile-details', function(req, res, next) {
+app.get('/profile-detail', function(req, res, next) {
 
   var profileArray  = {
     id: 11,
