@@ -36,10 +36,10 @@ app.get('/store-opening-hours', function(req, res, next) {
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 
   var storeArray  = [
-    { id: 11, name: 'Melrose' },
-    { id: 12, name: 'West Hollywood' },
-    { id: 13, name: 'Santa Monica' },
-    { id: 14, name: 'East Hollywood' }
+    { id: 11, name: 'Melrose', type: "gallery" },
+    { id: 12, name: 'West Hollywood', type: "outlet" },
+    { id: 13, name: 'Santa Monica', type: "gallery" },
+    { id: 14, name: 'East Hollywood', type: "gallery" }
   ];
   
   res.send({
