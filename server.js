@@ -61,7 +61,12 @@ app.get('/daily-agenda/:date', (req, res) => {
         { "start_date": `${date} 14:30`, "end_date": `${date} 16:30`,"draggable":false, "resizeable": false, "text":"INST", "section_id":80},
         { "start_date": `${date} 16:30`, "end_date": `${date} 17:00`,"draggable":false, "resizeable": false, "text":"DD", "section_id":80},
         { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":80}
-    ])
+    ]);
+  res.send({
+   "msg": "daily data",
+   "success": true,
+   "data": dailyDate
+  });
 })
 //to get list of all timezons
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
