@@ -182,7 +182,7 @@ app.get('/get-wekly-events', function(req, res, next) {
 var weeklyEvents  = [
       
       { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"sick", section_id:40},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:50},
+      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9:30AM - 6:30PM", section_id:50},
       { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"vacation", section_id:60},
       { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:70},
       { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:80},
