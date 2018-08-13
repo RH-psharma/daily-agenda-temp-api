@@ -16,13 +16,13 @@ app.use(function(req, res, next) {
 app.get('/store-opening-hours', function(req, res, next) {
 
   var storeOpeningHours = [
-    {date: "2018-08-05", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-06", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-07", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-08", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-09", start_time: "8AM", end_time:"6PM"},
-    {date: "2018-08-10", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-11", start_time: "9AM", end_time:"6PM"}
+    {date: "2018-08-12", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-13", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-14", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-15", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-16", start_time: "8AM", end_time:"6PM"},
+    {date: "2018-08-17", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-18", start_time: "9AM", end_time:"6PM"}
 ]
   
   res.send({
