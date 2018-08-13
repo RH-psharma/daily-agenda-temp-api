@@ -32,6 +32,37 @@ app.get('/store-opening-hours', function(req, res, next) {
   });
 });
 
+app.get('/daily-agenda/:date', (req, res) => {
+    let date = moment(req.params.date).format('YYYY-MM-DD');
+    
+    return res.json([
+        { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"FL", "section_id":20 },
+        { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":20 },
+        { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"CC", "section_id":20},
+        { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"TB", "section_id":20},
+        { "start_date": `${date} 10:00`, "end_date": `${date} 14:00`, "draggable":false, "resizeable": false,"text":"FL", "section_id":40},
+        { "start_date": `${date} 14:00`, "end_date": `${date} 15:30`, "draggable":false, "resizeable": false,"text":"GH", "section_id":40},
+        { "start_date": `${date} 15:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"MB", "section_id":40},
+        { "start_date": `${date} 16:00`, "end_date": `${date} 17:00`, "draggable":false, "resizeable": false,"text":"CG", "section_id":40},
+        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"INTV", "section_id":40},
+        { "start_date": `${date} 18:00`, "end_date": `${date} 19:00`, "draggable":false, "resizeable": false,"text":"EDU", "section_id":40},
+        { "start_date": `${date} 12:00`, "end_date": `${date} 14:00`, "draggable":false, "resizeable": false, "text":"FL", "section_id":50},
+        { "start_date": `${date} 14:00`, "end_date": `${date} 14:30`, "draggable":false, "resizeable": false, "text":"MB", "section_id":50},
+        { "start_date": `${date} 14:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false, "text":"CUR", "section_id":50},
+        { "start_date": `${date} 16:30`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false, "text":"CS", "section_id":50},
+        { "start_date": `${date} 18:30`, "end_date": `${date} 21:00`, "draggable":false, "resizeable": false, "text":"HK", "section_id":50},
+        { "start_date": `${date} 08:00`, "end_date": `${date} 12:00`,"text":"HK","draggable":false, "resizeable": false, "text":"FAC", "section_id":60},
+        { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`,"draggable":false, "resizeable": false, "text":"MB", "section_id":60},
+        { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`,"draggable":false, "resizeable": false, "text":"CO", "section_id":60},
+        { "start_date": `${date} 16:00`, "end_date": `${date} 17:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":60},
+        { "start_date": `${date} 09:00`, "end_date": `${date} 11:00`,"draggable":false, "resizeable": false, "text":"DEL", "section_id":80},
+        { "start_date": `${date} 12:00`, "end_date": `${date} 14:00`,"draggable":false, "resizeable": false, "text":"MB", "section_id":80},
+        { "start_date": `${date} 14:00`, "end_date": `${date} 14:30`,"draggable":false, "resizeable": false, "text":"HV", "section_id":80},
+        { "start_date": `${date} 14:30`, "end_date": `${date} 16:30`,"draggable":false, "resizeable": false, "text":"INST", "section_id":80},
+        { "start_date": `${date} 16:30`, "end_date": `${date} 17:00`,"draggable":false, "resizeable": false, "text":"DD", "section_id":80},
+        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":80}
+    ])
+})
 //to get list of all timezons
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 
