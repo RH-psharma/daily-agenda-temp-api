@@ -87,7 +87,7 @@ app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 
 //to employees list
 app.get('/associates/11/:type', function(req, res, next) {
-  if(req.params.date == "weekly") {
+  if(req.params.type == "weekly") {
      var timing = "40";
      } else {
      var timing = "10:30AM-6:30PM";
