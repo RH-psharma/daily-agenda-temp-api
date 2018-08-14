@@ -86,37 +86,41 @@ app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 });
 
 //to employees list
-app.get('/associates/11', function(req, res, next) {
-
+app.get('/associates/11/:type', function(req, res, next) {
+  if(req.params.date == "weekly") {
+     var timing = "40";
+     } else {
+     var timing = "10:30AM-6:30PM";
+     }
   var empArray  = [
 {key:3, label:"Leadership", open:true, children: [
-  {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabethhhhhhhhhhh,Taylorrrrrrrrrrrrrrrrrrrrrrrrr,40"},
-{key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe,40"},
-{key:50, label:"https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,32"},
-{key:60, label:"https://semantic-ui.com/images/avatar2/large/molly.png,Linda,Brown,40"},
-{key:70, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,George,Luca,40"},
-{key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
-{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+  {key:20, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabethhhhhhhhhhh,Taylorrrrrrrrrrrrrrrrrrrrrrrrr,${timing}`},
+{key:40, label:`https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe,${timing}`},
+{key:50, label:`https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,${timing}`},
+{key:60, label:`https://semantic-ui.com/images/avatar2/large/molly.png,Linda,Brown,${timing}`},
+{key:70, label:`https://semantic-ui.com/images/avatar/large/elliot.jpg,George,Luca,${timing}`},
+{key:80, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,${timing}`},
+{key:90, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,${timing}`}
       ]},
       {key:4, label:"Design Experience", open: true, children: [
-        {key:100, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,William,Moss,40"},
-{key:110, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,David,40"}
+        {key:100, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,William,Moss,${timing}`},
+{key:110, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,David,${timing}`}
       ]},
       {key:5, label:"Design Atelier", open: true, children: [
-        {key:120, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Bob,Moss,40"},
-{key:130, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Mike,Fossey,40"}
+        {key:120, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Bob,Moss,${timing}`},
+{key:130, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Mike,Fossey,${timing}`}
       ]},
       {key:6, label:"Trade", open: true, children: [
-        {key:140, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Ross,Moss,40"},
-{key:150, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Diana,Fossey,40"}
+        {key:140, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Ross,Moss,${timing}`},
+{key:150, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Diana,Fossey,${timing}`}
       ]},
       {key:7, label:"Client Services", open: true, children: [
-        {key:160, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Ketty,Moss,40"},
-{key:170, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Blessy,Fossey,40"}
+        {key:160, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Ketty,Moss,${timing}`},
+{key:170, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Blessy,Fossey,${timing}`}
       ]},
       {key:8, label:"Support", open: true, children: [
-        {key:180, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Jobin,Moss,40"},
-{key:190, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Jerry,Fossey,40"}
+        {key:180, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Jobin,Moss,${timing}`},
+{key:190, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Jerry,Fossey,${timing}`}
       ]},
       {key:9, label:"Curating", open: true, children: [
         {key:200, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
