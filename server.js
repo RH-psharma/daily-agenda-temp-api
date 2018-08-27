@@ -15,15 +15,15 @@ app.use(function(req, res, next) {
 //to get list of all timezons
 app.get('/store-opening-hours', function(req, res, next) {
 
-  var storeOpeningHours = [
-    {date: "2018-08-12", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-13", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-14", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-15", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-16", start_time: "8AM", end_time:"6PM"},
-    {date: "2018-08-17", start_time: "9AM", end_time:"6PM"},
-    {date: "2018-08-18", start_time: "9AM", end_time:"6PM"}
-]
+   var storeOpeningHours = [
+    {date: "2018-08-26", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-27", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-28", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-29", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-08-30", start_time: "8AM", end_time:"6PM"},
+    {date: "2018-08-31", start_time: "9AM", end_time:"6PM"},
+    {date: "2018-09-01", start_time: "9AM", end_time:"6PM"}
+];
   
   res.send({
    "msg": "Store data",
@@ -123,8 +123,8 @@ app.get('/associates/11/:type', function(req, res, next) {
 {key:190, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Jerry,Fossey,${timing}`}
       ]},
       {key:9, label:"Curating", open: true, children: [
-        {key:200, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
-{key:210, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,40"}
+        {key:200, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,${timing}`},
+{key:210, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,${timing}`}
       ]}
     ];
 
@@ -190,69 +190,69 @@ app.get('/get-wekly-events', function(req, res, next) {
 
 var weeklyEvents  = [
       
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"sick", section_id:40},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9:30AM - 6:30PM", section_id:50},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"vacation", section_id:60},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:70},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:80},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM,O-8PM - 11PM", section_id:90},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:100},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"temporary", section_id:110},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:120},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:130},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:140},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:150},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:160},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:170},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:180},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:190},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:200},
-      { start_date: "2018-08-15 00:00", end_date: "2018-08-15 24:00", text:"9AM - 6PM", section_id:210},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"sick", section_id:40},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9:30AM - 6:30PM", section_id:50},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"vacation", section_id:60},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:70},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:80},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM,O-8PM - 11PM", section_id:90},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:100},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"temporary", section_id:110},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:120},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:130},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:140},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:150},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:160},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:170},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:180},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:190},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:200},
+      { start_date: "2018-08-27 00:00", end_date: "2018-08-27 24:00", text:"9AM - 6PM", section_id:210},
 
 
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:20},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"temporary", section_id:40},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:50},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:60},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:70},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:80},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:100},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:110},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:120},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:130},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:140},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:150},
-      { start_date: "2018-08-16  00:00", end_date: "2018-08-16  24:00", text:"9AM - 6PM", section_id:160},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:20},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"temporary", section_id:40},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:50},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:60},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:70},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:80},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:100},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:110},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:120},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:130},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:140},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:150},
+      { start_date: "2018-08-29  00:00", end_date: "2018-08-29  24:00", text:"9AM - 6PM", section_id:160},
 
 
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:20},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"sick", section_id:40},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:50},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"vacation", section_id:60},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:70},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:80},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"temporary", section_id:110},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:120},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:130},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:140},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:150},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:160},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:170},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:180},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:190},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:200},
-      { start_date: "2018-08-18 00:00", end_date: "2018-08-18 24:00", text:"9AM - 6PM", section_id:210},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:20},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"sick", section_id:40},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:50},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"vacation", section_id:60},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:70},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:80},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"temporary", section_id:110},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:120},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:130},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:140},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:150},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:160},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:170},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:180},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:190},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:200},
+      { start_date: "2018-08-30 00:00", end_date: "2018-08-30 24:00", text:"9AM - 6PM", section_id:210},
 
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"9AM - 6PM", section_id:20},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"sick", section_id:40},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"9AM - 6PM", section_id:50},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"vacation", section_id:60},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"9AM - 6PM", section_id:70},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"9AM - 6PM", section_id:80},
-      { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
-    { start_date: "2018-07-26 00:00", end_date: "2018-07-26 24:00", text:"temporary", section_id:110},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"9AM - 6PM", section_id:20},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"sick", section_id:40},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"9AM - 6PM", section_id:50},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"vacation", section_id:60},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"9AM - 6PM", section_id:70},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"9AM - 6PM", section_id:80},
+      { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"9AM - 6PM,P-8PM - 11PM", section_id:90},
+    { start_date: "2018-08-31 00:00", end_date: "2018-08-31 24:00", text:"temporary", section_id:110},
 ];
 
   res.send({
