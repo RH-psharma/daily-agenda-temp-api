@@ -60,7 +60,31 @@ app.get('/daily-agenda/:date', (req, res) => {
         { "start_date": `${date} 14:00`, "end_date": `${date} 14:30`,"draggable":false, "resizeable": false, "text":"MB", "section_id":80},
         { "start_date": `${date} 14:30`, "end_date": `${date} 16:30`,"draggable":false, "resizeable": false, "text":"INST", "section_id":80},
         { "start_date": `${date} 16:30`, "end_date": `${date} 17:00`,"draggable":false, "resizeable": false, "text":"DD", "section_id":80},
-        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":80}
+        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":80},
+      
+        { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"IG", "section_id":100},
+    { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":100},
+    { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":100},
+    { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"HV", "section_id":100},
+
+    { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"DD", "section_id":110},
+    { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":110},
+    { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":110},
+    { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":110},
+
+    { "start_date": `${date} 09:00`, "end_date": `${date} 10:00`, "draggable":false, "resizeable": false, "text":"HV", "section_id":110},
+    { "start_date": `${date} 10:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"DD", "section_id":110},
+    { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":110},
+    { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":110},
+    { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":110},
+
+    { "start_date": `${date} 09:00`, "end_date": `${date} 10:00`, "draggable":false, "resizeable": false, "text":"INST", "section_id":110},
+    { "start_date": `${date} 10:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"DD", "section_id":110},
+    { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":110},
+    { "start_date": `${date} 12:30`, "end_date": `${date} 14:00`, "draggable":false, "resizeable": false,"text":"DEL", "section_id":110},
+    { "start_date": `${date} 14:00`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"DEL", "section_id":110},
+    { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":110},
+    
     ];
   res.send({
    "msg": "daily data",
