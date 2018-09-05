@@ -149,6 +149,10 @@ app.get('/associates/11/:type', function(req, res, next) {
       {key:9, label:"Curating", open: true, children: [
         {key:200, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,${timing}`},
 {key:210, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,${timing}`}
+      ]},
+    {key:10, label:"Faciliies", open: true, children: [
+        {key:200, label:`https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,${timing}`},
+{key:210, label:`https://semantic-ui.com/images/avatar2/large/matthew.png,Dian,Fossey,${timing}`}
       ]}
     ];
 
