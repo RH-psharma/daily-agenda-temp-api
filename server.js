@@ -89,14 +89,11 @@ app.get('/daily-agenda/:date', (req, res) => {
   
   var onLeaveId = [20];
   
-  var data = [
-     "onLeaveId": onLeaveId,
-     "schedule": dailyDate
-  ];
   res.send({
    "msg": "daily data",
    "success": true,
-   "data": data
+   "data": dailyDate,
+   "onLeaveId":onLeaveId
   });
 })
 //to get list of all timezons
