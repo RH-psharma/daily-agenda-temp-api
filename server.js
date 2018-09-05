@@ -87,7 +87,7 @@ app.get('/daily-agenda/:date', (req, res) => {
     
     ];
   
-  var onLeaveId = [20,30];
+  var onLeaveId = [20,40];
   
   res.send({
    "msg": "daily data",
