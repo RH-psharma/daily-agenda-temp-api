@@ -114,6 +114,24 @@ app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
 });
 
 //to employees list
+app.get('/associates-names/11/:date', function(req, res, next) {
+  var empArray  = [
+    {id:40, name:`John Doe`},
+    {id:50, name:`Kristy Miller`},
+    {id:60, name:`Linda Brown`},
+    {id:70, name:`George Luca`},
+    {id:80, name:`Kate Moss`},
+    {id:90, name:`Dian Fossey`}
+  ];
+  
+  res.send({
+   "msg": "Store data",
+   "success": true,
+   "data": empArray
+  });
+});
+
+//to employees list
 app.get('/associates/11/:type', function(req, res, next) {
   if(req.params.type == "weekly") {
      var timing = "40";
