@@ -16,13 +16,13 @@ app.use(function(req, res, next) {
 app.get('/store-opening-hours', function(req, res, next) {
 
    var storeOpeningHours = [
-    {date: "2018-09-02", start_time: "9:00AM", end_time:"6:00PM"},
-    {date: "2018-09-03", start_time: "9:00AM", end_time:"6:00PM"},
-    {date: "2018-09-04", start_time: "9:00AM", end_time:"6:00PM"},
-    {date: "2018-09-05", start_time: "9:00AM", end_time:"6:00PM"},
-    {date: "2018-09-06", start_time: "8:00AM", end_time:"6:00PM"},
-    {date: "2018-09-07", start_time: "9:00AM", end_time:"6:00PM"},
-    {date: "2018-09-08", start_time: "9:00AM", end_time:"6:00PM"}
+    {date: "2018-09-09", start_time: "9:00AM", end_time:"6:00PM"},
+    {date: "2018-09-10", start_time: "9:00AM", end_time:"6:00PM"},
+    {date: "2018-09-11", start_time: "9:00AM", end_time:"6:00PM"},
+    {date: "2018-09-12", start_time: "9:00AM", end_time:"6:00PM"},
+    {date: "2018-09-12", start_time: "8:00AM", end_time:"6:00PM"},
+    {date: "2018-09-14", start_time: "9:00AM", end_time:"6:00PM"},
+    {date: "2018-09-15", start_time: "9:00AM", end_time:"6:00PM"}
 ];
   
   res.send({
@@ -282,7 +282,7 @@ var weeklyEvents  = [
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"vacation", section_id:60},
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM", section_id:70},
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM", section_id:80},
-      { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM,P-8PM - 11PM", section_id:90},
+      { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM,P-8:00PM - 11:00PM", section_id:90},
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"temporary", section_id:110},
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM", section_id:120},
       { start_date: "2018-09-14 00:00", end_date: "2018-09-14 24:00", text:"9:00AM - 6:00PM", section_id:130},
@@ -301,7 +301,7 @@ var weeklyEvents  = [
       { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"vacation", section_id:60},
       { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"9:00AM - 6:00PM", section_id:70},
       { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"9:00AM - 6:00PM", section_id:80},
-      { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"9:00AM - 6:00PM,P-8PM - 11PM", section_id:90},
+      { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"9:00AM - 6:00PM,P-8:00PM - 11:00PM", section_id:90},
     { start_date: "2018-09-15 00:00", end_date: "2018-09-15 24:00", text:"temporary", section_id:110},
 ];
 
