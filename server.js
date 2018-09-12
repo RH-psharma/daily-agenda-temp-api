@@ -33,6 +33,7 @@ app.get('/store-opening-hours', function(req, res, next) {
 });
 
 app.get('/daily-agenda/:date', (req, res) => {
+  try{
     let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment(new Date()).format('YYYY-MM-DD');
     let daysDiff = moment.duration(todaysDate.diff(date));
@@ -98,6 +99,11 @@ app.get('/daily-agenda/:date', (req, res) => {
    "onLeaveId":onLeaveId,
     "daysDiff": daysDiff
   });
+  } catch(e) {
+    res.send({
+      e
+    });
+  }
 })
 //to get list of all timezons
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
