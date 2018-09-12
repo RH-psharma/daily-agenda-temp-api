@@ -34,7 +34,9 @@ app.get('/store-opening-hours', function(req, res, next) {
 
 app.get('/daily-agenda/:date', (req, res) => {
     let date = moment(req.params.date).format('YYYY-MM-DD');
-    
+  let todaysDate = moment(new Date()).format('YYYY-MM-DD');
+    let daysDiff = moment.duration(todaysDate.diff(date));
+  
     var dailyDate = [
         { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":true, "resizeable": false, "text":"FL", "section_id":20 },
         { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":true, "resizeable": false,"text":"MB", "section_id":20 },
@@ -93,7 +95,8 @@ app.get('/daily-agenda/:date', (req, res) => {
    "msg": "daily data",
    "success": true,
    "data": dailyDate,
-   "onLeaveId":onLeaveId
+   "onLeaveId":onLeaveId,
+    "daysDiff": daysDiff
   });
 })
 //to get list of all timezons
