@@ -36,7 +36,7 @@ app.get('/daily-agenda/:date', (req, res) => {
   
     let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment().format('YYYY-MM-DD');
-//     let daysDiff = moment.duration(todaysDate.diff(date));
+    let daysDiff = date.diff(todaysDate);
   
   
     var dailyDate = [
@@ -98,7 +98,7 @@ app.get('/daily-agenda/:date', (req, res) => {
    "success": true,
    "data": dailyDate,
    "onLeaveId":onLeaveId,
-    "daysDiff": todaysDate
+    "daysDiff": daysDiff
   });
   
 })
