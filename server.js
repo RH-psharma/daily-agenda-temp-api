@@ -90,15 +90,20 @@ app.get('/daily-agenda/:date', (req, res) => {
     { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":true, "resizeable": false,"text":"DD", "section_id":130},
     
     ];
-  
   var onLeaveId = [20,40];
+  
+  if(daysDiff > 3) {
+    dailyDate = [];
+    onLeaveId = [];
+     }
+  
+  
   
   res.send({
    "msg": "daily data",
    "success": true,
    "data": dailyDate,
    "onLeaveId":onLeaveId,
-    "daysDiff": daysDiff
   });
   
 })
