@@ -101,7 +101,7 @@ app.get('/daily-agenda/:date', (req, res) => {
   });
   } catch(e) {
     res.send({
-      e
+      "e" : e
     });
   }
 })
