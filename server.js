@@ -37,6 +37,11 @@ app.get('/daily-agenda/:date', (req, res) => {
     let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment(new Date()).format('YYYY-MM-DD');
     let daysDiff = moment.duration(todaysDate.diff(date));
+  } catch(e) {
+    res.send({
+      e
+    });
+  }
   
     var dailyDate = [
         { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":true, "resizeable": false, "text":"FL", "section_id":20 },
@@ -99,11 +104,7 @@ app.get('/daily-agenda/:date', (req, res) => {
    "onLeaveId":onLeaveId,
     "daysDiff": daysDiff
   });
-  } catch(e) {
-    res.send({
-      "e" : e
-    });
-  }
+  
 })
 //to get list of all timezons
 app.get('/storesList/5b5032c4c810db21943ff058', function(req, res, next) {
