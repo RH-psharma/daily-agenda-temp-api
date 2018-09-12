@@ -33,10 +33,10 @@ app.get('/store-opening-hours', function(req, res, next) {
 });
 
 app.get('/daily-agenda/:date', (req, res) => {
-  
-    let date = moment(req.params.date);
+  let momentDate = moment(req.params.date);
+    let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment(new Date());
-    let daysDiff = date.diff(todaysDate, 'days');
+    let daysDiff = momentDate.diff(todaysDate, 'days');
   
   
     var dailyDate = [
