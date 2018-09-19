@@ -205,7 +205,7 @@ app.get('/associates/11/:type', function(req, res, next) {
 
 
 //to employees list
-app.get('/associates/12', function(req, res, next) {
+app.get('/associates/12/:type', function(req, res, next) {
 
   var empArray  = [
      
