@@ -208,12 +208,10 @@ app.get('/associates/11/:type', function(req, res, next) {
 app.get('/associates/12/:type', function(req, res, next) {
 
   var empArray  = [
-     
-{key:2, label:"Field Leader", open: true, children: [
-{key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
-{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,John,Doe,40"}
-]},
+ 
 {key:3, label:"Leadership", open:true, children: [
+  {key:80, label:"https://semantic-ui.com/images/avatar2/large/elyse.png,Kate,Moss,40"},
+{key:90, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,John,Doe,40"},
 {key:20, label:"https://semantic-ui.com/images/avatar2/large/matthew.png,Elizabeth,Taylor,40"},
 {key:40, label:"https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Williams,40"},
 {key:50, label:"https://semantic-ui.com/images/avatar2/large/kristy.png,Kristy,Miller,32"},
