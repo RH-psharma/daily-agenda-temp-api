@@ -12,6 +12,15 @@ app.use(function(req, res, next) {
   next();
 });
 
+//API to get employee data
+app.get('/get-employee-details/:id', function(req, res, next) {
+  res.send({
+   "msg": "Store data",
+   "success": true,
+   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe"
+  });
+});
+
 //to get list of all timezons
 app.get('/store-opening-hours', function(req, res, next) {
 
