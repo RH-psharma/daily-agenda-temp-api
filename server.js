@@ -37,7 +37,7 @@ app.get('/daily-agenda/:date', (req, res) => {
     let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment(new Date());
     let daysDiff = momentDate.diff(todaysDate, 'days');
-  
+    let isScheduleAvailable = true;
   
       var dailyDate = [
         { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"FL", "section_id":20 },
@@ -102,6 +102,7 @@ app.get('/daily-agenda/:date', (req, res) => {
   if(daysDiff > 3) {
     dailyDate = [];
     onLeaveId = [];
+    isScheduleAvailable = false;
      }
   
   
@@ -111,6 +112,7 @@ app.get('/daily-agenda/:date', (req, res) => {
    "success": true,
    "data": dailyDate,
    "onLeaveId":onLeaveId,
+    "isScheduleAvailable": isScheduleAvailable
   });
   
 })
