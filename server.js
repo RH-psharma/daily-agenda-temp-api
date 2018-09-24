@@ -17,11 +17,16 @@ app.use(bodyParser.json());
 
 //API to get employee data
 app.post('/get-employee-details', function(req, res, next) {
+  var empDetails = [];
+  
+  for(var i = 0; i < req.body.userIds.length; i++) {
+    empDetails.push("https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe");
+  }
    res.send({
    "msg": "Store data",
    "success": true,
    "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-     "id":req.body.id
+     "id":empDetails
   });
 //   res.send({
 //    "msg": "Store data",
