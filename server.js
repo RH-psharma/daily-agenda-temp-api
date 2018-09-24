@@ -1,5 +1,6 @@
 var express = require('express');
 var moment = require('moment');
+var bodyParser = require('body-parser');
 //test
 var app = express();
 
