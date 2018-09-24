@@ -19,8 +19,7 @@ app.post('/get-employee-details', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-     "id":req.body.id
+   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe"
   });
 //   res.send({
 //    "msg": "Store data",
