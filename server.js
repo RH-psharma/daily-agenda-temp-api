@@ -13,11 +13,13 @@ app.use(function(req, res, next) {
 });
 
 //API to get employee data
-app.get('/get-employee-details/:id', function(req, res, next) {
+app.post('/get-employee-details', function(req, res, next) {
+  
   res.send({
    "msg": "Store data",
    "success": true,
-   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe"
+   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
+    "id":req
   });
 });
 
