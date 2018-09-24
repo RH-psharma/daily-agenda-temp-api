@@ -25,24 +25,20 @@ app.get('/get-employee-details/:id', function(req, res, next) {
 //API to get employee data
 app.post('/get-employee-details', function(req, res, next) {
   var empDetails = [];
-  
-  for(var i = 0; i < req.body.userIds.length; i++) {
-    empDetails.push({
-      "user_details": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-      "section_id": req.body.userIds[i]
-    });
-  }
+  var array = JSON.parse("[" + req.body.userIds + "]");
+ 
+//   for(var i = 0; i < req.body.userIds.length; i++) {
+//     empDetails.push({
+//       "user_details": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
+//       "section_id": req.body.userIds[i]
+//     });
+//   }
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": empDetails
+   "data": array
   });
-//   res.send({
-//    "msg": "Store data",
-//    "success": true,
-//    "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-//     "id":req.body.id
-//   });
+
 });
 
 //to get list of all timezons
