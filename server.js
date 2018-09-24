@@ -19,7 +19,7 @@ app.post('/get-employee-details', function(req, res, next) {
    "msg": "Store data",
    "success": true,
    "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-    "id":req
+    "id":req.body.id
   });
 });
 
