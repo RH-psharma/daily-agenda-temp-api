@@ -20,7 +20,7 @@ app.post('/get-employee-details', function(req, res, next) {
   var empDetails = [];
   
   for(var i = 0; i < req.body.userIds.length; i++) {
-    empDetails.push("https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe");
+    empDetails[req.body.userIds] = "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe";
   }
    res.send({
    "msg": "Store data",
