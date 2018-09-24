@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json());
 
 //API to get employee data
-app.post('/get-employee-details/:id', function(req, res, next) {
+app.post('/get-employee-details', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
