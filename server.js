@@ -12,12 +12,15 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use(express.bodyParser());
+
 //API to get employee data
 app.post('/get-employee-details', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe"
+   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
+     "id":req.body.id
   });
 //   res.send({
 //    "msg": "Store data",
