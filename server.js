@@ -25,7 +25,8 @@ app.get('/get-employee-details/:id', function(req, res, next) {
 //API to get employee data
 app.post('/get-employee-details', function(req, res, next) {
   var empDetails = [];
-  var array = JSON.parse("[" + req.body.userIds + "]");
+//   var array = JSON.parse("[" + req.body.userIds + "]");
+  var array = req.body.userIds;
  
   for(var i = 0; i < array.length; i++) {
     empDetails.push({
