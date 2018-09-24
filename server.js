@@ -1,6 +1,6 @@
 var express = require('express');
 var moment = require('moment');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 //test
 var app = express();
 
@@ -13,14 +13,15 @@ app.use(function(req, res, next) {
   next();
 });
 
-// app.use(express.bodyParser());
+app.use(bodyParser.json());
 
 //API to get employee data
-app.get('/get-employee-details/:id', function(req, res, next) {
+app.post('/get-employee-details/:id', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe"
+   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
+     "id":req.body.id
   });
 //   res.send({
 //    "msg": "Store data",
