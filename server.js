@@ -27,13 +27,15 @@ app.post('/get-employee-details', function(req, res, next) {
   var empDetails = [];
   
   for(var i = 0; i < req.body.userIds.length; i++) {
-    empDetails[req.body.userIds[i]] = "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe";
+    empDetails.push({
+      "user_details": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
+      "section_id": req.body.userIds[i]
+    });
   }
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": "https://semantic-ui.com/images/avatar/large/elliot.jpg,John,Doe",
-     "id":empDetails
+   "data": empDetails
   });
 //   res.send({
 //    "msg": "Store data",
