@@ -36,7 +36,7 @@ app.post('/get-employee-details', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": array
+   "data": empDetails
   });
 
 });
