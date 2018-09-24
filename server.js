@@ -1,6 +1,6 @@
 var express = require('express');
 var moment = require('moment');
-var bodyParser = require('body-parser');
+// var bodyParser = require('body-parser');
 //test
 var app = express();
 
@@ -13,10 +13,10 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(express.bodyParser());
+// app.use(express.bodyParser());
 
 //API to get employee data
-app.post('/get-employee-details', function(req, res, next) {
+app.get('/get-employee-details/:id', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
