@@ -23,7 +23,7 @@ app.get('/get-employee-details/:id', function(req, res, next) {
   });
 });
 
-app.get('forecastAndGoals/:date/:shop-id', function(req, res, next) {
+app.get('/forecastAndGoals/:date/:shop-id', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
