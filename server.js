@@ -27,13 +27,13 @@ app.get('/forecastAndGoals/:date/:shop-id', function(req, res, next) {
    res.send({
    "msg": "Store data",
    "success": true,
-   "data": {
+   "data": [{
    		"yesterdays_actual" : "15760",
       "week_to_date_actual" : "16789",
       "ly_demand" : "16789",
       "todays_sales" : "56600",
       "sales_goal" : "60000"
-	  }
+	  }]
   });
 });
 
