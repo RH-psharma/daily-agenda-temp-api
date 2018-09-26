@@ -23,6 +23,17 @@ app.get('/get-employee-details/:id', function(req, res, next) {
   });
 });
 
+//API to update forectas and goals
+app.post('/forecastAndGoals/:selectedDate/:shopId', function(req, res, next) {
+
+   res.send({
+   "msg": "Forecast and goals updated",
+   "success": true,
+   "data": empDetails
+  });
+
+});
+
 app.get('/forecastAndGoals/:selectedDate/:shopId', function(req, res, next) {
    res.send({
    "msg": "Store data",
