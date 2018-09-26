@@ -23,6 +23,17 @@ app.get('/get-employee-details/:id', function(req, res, next) {
   });
 });
 
+//API to update activity
+app.post('/editActivity/:shopId/:selectedDate/:activityId', function(req, res, next) {
+
+   res.send({
+   "msg": "Activity Updated successfully",
+   "success": true,
+   "data": "updated"
+  });
+
+});
+
 //API to update forectas and goals
 app.post('/forecastAndGoals/:selectedDate/:shopId', function(req, res, next) {
 
