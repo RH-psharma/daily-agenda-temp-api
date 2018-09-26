@@ -14,6 +14,86 @@ app.use(function(req, res, next) {
 });
 
 app.use(bodyParser.json());
+
+
+//API to get all notifications
+app.get('/getAllNotifications/:userId', function(req, res, next) {
+   var notifications =  [
+    {
+        "status": "unread",
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 14:20"
+        "employeeId": "FFGDFDFGFDGG"
+    },
+    {
+        "status": "unread",
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 12:20"
+        "employeeId": "FFGDFDFGFDGG"
+    },
+    {
+        "status": "unread",
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 10:20"
+        "employeeId": "FFGDFDFGFDGG"
+    },
+    {
+        "status": "read",
+        "message":"Site Visit",
+        "updatedAt": "2018-09-25 10:20"
+        "employeeId": "FFGDFDFGFDGG"
+    }
+
+];
+   res.send({
+   "msg": "All notifications",
+   "success": true,
+   "data": notifications
+  });
+});
+
+//API to get unread notifications
+app.get('/getUnreadNotifications/:userId', function(req, res, next) {
+   var notifications =  [
+    {
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 14:20"
+        "employeeId": "FFGDFDFGFDGG"
+    },
+    {
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 12:20"
+        "employeeId": "FFGDFDFGFDGG"
+    },
+    {
+        "message":"Site Visit",
+        "updatedAt": "2018-09-26 10:20"
+        "employeeId": "FFGDFDFGFDGG"
+    }
+];
+   res.send({
+   "msg": "Unread notifications",
+   "success": true,
+   "data": notifications
+  });
+});
+
+//API to get read notifications
+app.get('/getUnreadNotifications/:userId', function(req, res, next) {
+   var notifications =  [
+    {
+        "message":"Site Visit",
+        "updatedAt": "2018-09-25 10:20"
+        "employeeId": "FFGDFDFGFDGG"
+    }
+];
+   res.send({
+   "msg": "Read notifications",
+   "success": true,
+   "data": notifications
+  });
+});
+
 app.get('/get-employee-details/:id', function(req, res, next) {
   
    res.send({
