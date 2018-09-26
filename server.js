@@ -29,7 +29,7 @@ app.post('/forecastAndGoals/:selectedDate/:shopId', function(req, res, next) {
    res.send({
    "msg": "Forecast and goals updated",
    "success": true,
-   "data": empDetails
+   "data": "updated"
   });
 
 });
