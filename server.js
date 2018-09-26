@@ -22,25 +22,25 @@ app.get('/getAllNotifications/:userId', function(req, res, next) {
     {
         "status": "unread",
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 14:20"
+        "updatedAt": "2018-09-26 14:20",
         "employeeId": "FFGDFDFGFDGG"
     },
     {
         "status": "unread",
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 12:20"
+        "updatedAt": "2018-09-26 12:20",
         "employeeId": "FFGDFDFGFDGG"
     },
     {
         "status": "unread",
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 10:20"
+        "updatedAt": "2018-09-26 10:20",
         "employeeId": "FFGDFDFGFDGG"
     },
     {
         "status": "read",
         "message":"Site Visit",
-        "updatedAt": "2018-09-25 10:20"
+        "updatedAt": "2018-09-25 10:20",
         "employeeId": "FFGDFDFGFDGG"
     }
 
@@ -57,17 +57,17 @@ app.get('/getUnreadNotifications/:userId', function(req, res, next) {
    var notifications =  [
     {
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 14:20"
+        "updatedAt": "2018-09-26 14:20",
         "employeeId": "FFGDFDFGFDGG"
     },
     {
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 12:20"
+        "updatedAt": "2018-09-26 12:20",
         "employeeId": "FFGDFDFGFDGG"
     },
     {
         "message":"Site Visit",
-        "updatedAt": "2018-09-26 10:20"
+        "updatedAt": "2018-09-26 10:20",
         "employeeId": "FFGDFDFGFDGG"
     }
 ];
@@ -83,7 +83,7 @@ app.get('/getUnreadNotifications/:userId', function(req, res, next) {
    var notifications =  [
     {
         "message":"Site Visit",
-        "updatedAt": "2018-09-25 10:20"
+        "updatedAt": "2018-09-25 10:20",
         "employeeId": "FFGDFDFGFDGG"
     }
 ];
