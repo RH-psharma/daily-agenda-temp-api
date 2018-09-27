@@ -15,6 +15,16 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 
+app.get('/getNotificationCount', function(req, res, next) {
+  
+   res.send({
+   "msg": "Unread notification count",
+   "success": true,
+   "data": "3"
+  });
+});
+
+
 
 //API to get all notifications
 app.get('/getAllNotifications/:userId', function(req, res, next) {
