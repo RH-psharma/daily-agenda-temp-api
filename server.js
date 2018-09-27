@@ -79,7 +79,7 @@ app.get('/getUnreadNotifications/:userId', function(req, res, next) {
 });
 
 //API to get read notifications
-app.get('/getUnreadNotifications/:userId', function(req, res, next) {
+app.get('/getReadNotifications/:userId', function(req, res, next) {
    var notifications =  [
     {
         "message":"Site Visit",
