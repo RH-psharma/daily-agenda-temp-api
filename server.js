@@ -170,7 +170,7 @@ app.post('/get-employee-details', function(req, res, next) {
 });
 
 //to get list of all timezons
-app.get('/store-opening-hours', function(req, res, next) {
+app.get('/store-opening-hours/:id/:startDate/:endDate', function(req, res, next) {
 
   var storeOpeningHours = [
     {date: "2018-09-16", start_time: "9:00AM", end_time:"6:00PM"},
@@ -189,7 +189,7 @@ app.get('/store-opening-hours', function(req, res, next) {
   });
 });
 
-app.get('/daily-agenda/:date', (req, res) => {
+app.get('/daily-agenda/:date/:storeId', (req, res) => {
   let momentDate = moment(req.params.date);
     let date = moment(req.params.date).format('YYYY-MM-DD');
     let todaysDate = moment(new Date());
@@ -316,7 +316,7 @@ app.get('/associates-names/11/:date', function(req, res, next) {
 });
 
 //to employees list
-app.get('/associates/11/:type', function(req, res, next) {
+app.get('/associates/11/:type/:startDate/:endDate', function(req, res, next) {
   if(req.params.type == "weekly") {
      var timing = "40";
      } else {
@@ -418,7 +418,7 @@ app.get('/associates/12/:type', function(req, res, next) {
 });
 
 //get events
-app.get('/get-wekly-events', function(req, res, next) {
+app.get('/get-weekly-events/:storeId/:startDate/:endDate', function(req, res, next) {
 
 var weeklyEvents  = [
       
