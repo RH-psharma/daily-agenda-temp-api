@@ -36,6 +36,14 @@ app.get('/login', function(req, res, next) {
 	   "data": "3"
 	  });
 });
+app.get('/markOnLeave/:date/:shopId/:empId', function(req, res, next) {
+  
+   res.send({
+   "msg": "Unread notification count",
+   "success": true,
+   "data": ""
+  });
+});
 
 app.get('/getNotificationCount/:userId', function(req, res, next) {
   
