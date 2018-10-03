@@ -35,7 +35,7 @@ app.get('/login', function(req, res, next) {
 	   "success": true,
 	   "data": "3"
 	  });
-}
+});
 
 app.get('/getNotificationCount/:userId', function(req, res, next) {
   
