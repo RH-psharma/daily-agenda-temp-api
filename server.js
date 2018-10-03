@@ -13,30 +13,9 @@ app.use(express.static(__dirname + '/static'));
 app.route('/api/login')
     .post(loginRoute);
 
-const RSA_PRIVATE_KEY = fs.readFileSync('./demos/private.key');
+// const RSA_PRIVATE_KEY = fs.readFileSync('./demos/private.key');
 
-export function loginRoute(req: Request, res: Response) {
 
-    const email = req.body.email,
-          password = req.body.password;
-
-    if (validateEmailAndPassword()) {
-       const userId = findUserIdForEmail(email);
-
-        const jwtBearerToken = jwt.sign({}, RSA_PRIVATE_KEY, {
-                algorithm: 'RS256',
-                expiresIn: 120,
-                subject: userId
-            }
-
-          // send the JWT back to the user
-          // TODO - multiple options available                              
-    }
-    else {
-        // send status 401 Unauthorized
-        res.sendStatus(401); 
-    }
-}
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -45,6 +24,35 @@ app.use(function(req, res, next) {
 });
 
 app.use(bodyParser.json());
+
+export function loginRoute(req: Request, res: Response) {
+
+    const email = req.body.email,
+          password = req.body.password;
+
+//     if (validateEmailAndPassword()) {
+//        const userId = findUserIdForEmail(email);
+
+//         const jwtBearerToken = jwt.sign({}, RSA_PRIVATE_KEY, {
+//                 algorithm: 'RS256',
+//                 expiresIn: 120,
+//                 subject: userId
+//             }
+
+//           // send the JWT back to the user
+//           // TODO - multiple options available                              
+//     }
+//     else {
+//         // send status 401 Unauthorized
+//         res.sendStatus(401); 
+//     }
+	
+	res.send({
+	   "msg": "Authentication successful",
+	   "success": true,
+	   "data": "3"
+	  });
+}
 
 app.get('/getNotificationCount/:userId', function(req, res, next) {
   
