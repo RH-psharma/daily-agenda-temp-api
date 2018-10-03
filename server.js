@@ -1,6 +1,9 @@
 var express = require('express');
 var moment = require('moment');
 var bodyParser = require('body-parser');
+var cookieParser  = require('cookie-parser');
+var jwt = require('jsonwebtoken');
+var fs = require("fs");
 //test
 var app = express();
 
