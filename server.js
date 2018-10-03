@@ -1,9 +1,9 @@
 var express = require('express');
 var moment = require('moment');
 var bodyParser = require('body-parser');
-var cookieParser  = require('cookie-parser');
-var jwt = require('jsonwebtoken');
-var fs = require("fs");
+// var cookieParser  = require('cookie-parser');
+// var jwt = require('jsonwebtoken');
+// var fs = require("fs");
 //test
 var app = express();
 
@@ -23,30 +23,13 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // export function loginRoute(req: Request, res: Response) {
 app.get('/login', function(req, res, next) {
     const email = req.body.email,
           password = req.body.password;
 
-//     if (validateEmailAndPassword()) {
-//        const userId = findUserIdForEmail(email);
-
-//         const jwtBearerToken = jwt.sign({}, RSA_PRIVATE_KEY, {
-//                 algorithm: 'RS256',
-//                 expiresIn: 120,
-//                 subject: userId
-//             }
-
-//           // send the JWT back to the user
-//           // TODO - multiple options available                              
-//     }
-//     else {
-//         // send status 401 Unauthorized
-//         res.sendStatus(401); 
-//     }
-	
 	res.send({
 	   "msg": "Authentication successful",
 	   "success": true,
