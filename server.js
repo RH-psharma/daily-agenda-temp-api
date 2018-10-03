@@ -305,7 +305,7 @@ app.get('/daily-agenda/:date/:storeId', (req, res) => {
    "msg": "daily data",
    "success": true,
    "data": dailyDate,
-   "onLeaveId":onLeaveId,
+   "onLeaveIds":onLeaveId,
     "isScheduleAvailable": isScheduleAvailable
   });
   
