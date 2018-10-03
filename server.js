@@ -284,7 +284,7 @@ app.get('/daily-agenda/:date/:storeId', (req, res) => {
     { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"DD", "section_id":"130"},
     
     ];
-  var onLeaveId = [40];
+  var onLeaveId = ["40"];
   
   if(daysDiff > 3) {
 //     dailyDate = [];
