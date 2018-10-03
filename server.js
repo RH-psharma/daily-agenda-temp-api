@@ -10,8 +10,8 @@ var app = express();
 // var appHelpers = {};
 app.use(express.static(__dirname + '/static'));
 
-app.route('/api/login')
-    .post(loginRoute);
+// app.route('/api/login')
+//     .post(loginRoute);
 
 // const RSA_PRIVATE_KEY = fs.readFileSync('./demos/private.key');
 
@@ -25,8 +25,8 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 
-export function loginRoute(req: Request, res: Response) {
-
+// export function loginRoute(req: Request, res: Response) {
+app.get('/login', function(req, res, next) {
     const email = req.body.email,
           password = req.body.password;
 
