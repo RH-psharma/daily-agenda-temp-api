@@ -45,6 +45,25 @@ app.get('/markOnLeave/:date/:shopId/:empId', function(req, res, next) {
   });
 });
 
+app.get('/extendShortenActivity/:date/:id', function(req, res, next) {
+  
+   res.send({
+   "msg": "Extended/shortened successfully",
+   "success": true,
+   "data": ""
+  });
+});
+
+app.get('/moveActivity/:date/:id', function(req, res, next) {
+  
+   res.send({
+   "msg": "Moved successfully",
+   "success": true,
+   "data": ""
+  });
+});
+
+
 app.get('/getNotificationCount/:userId', function(req, res, next) {
   
    res.send({
