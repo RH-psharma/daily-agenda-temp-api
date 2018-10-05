@@ -365,7 +365,7 @@ app.get('/associates-names/11/:date', function(req, res, next) {
 });
 
 //to employees list
-app.get('/associates/11/:type/:startDate/:endDate', function(req, res, next) {
+app.get('/associates/11/:type/:startDate/:endDate/:storeType', function(req, res, next) {
   if(req.params.type == "weekly") {
      var timing = "40";
      } else {
