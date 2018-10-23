@@ -24,6 +24,18 @@ app.use(function(req, res, next) {
 });
 
 // app.use(bodyParser.json());
+app.get('/my-schedule/:id', function(req, res, next) {
+    
+	res.send({
+	   "msg": "Authentication successful",
+	   "success": true,
+	   "data": [
+	    {text:"Meeting",    start_date:"2018-10-23 14:00", end_date:"2018-10-23 17:00"},
+	    {text:"Conference", start_date:"2018-10-22 12:00", end_date:"2018-10-22 19:00"},
+	    {text:"Interview",  start_date:"2018-10-23 09:00", end_date:"2018-10-23 10:00"}
+	]
+	  });
+});
 
 // export function loginRoute(req: Request, res: Response) {
 app.get('/login', function(req, res, next) {
