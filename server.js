@@ -30,9 +30,9 @@ app.get('/my-schedule/:id', function(req, res, next) {
 	   "msg": "Authentication successful",
 	   "success": true,
 	   "data": [
-	    {text:"VM",    start_date:"2018-10-23 14:00", end_date:"2018-10-23 17:00"},
-	    {text:"DOR", start_date:"2018-10-22 12:00", end_date:"2018-10-22 19:00"},
-	    {text:"DEL",  start_date:"2018-10-23 09:00", end_date:"2018-10-23 10:00"}
+	    {text:"VM",    start_date:"2018-10-23 14:00", end_date:"2018-10-23 17:00","draggable":false, "resizeable": false},
+	    {text:"DOR", start_date:"2018-10-22 12:00", end_date:"2018-10-22 19:00","draggable":false, "resizeable": false},
+	    {text:"DEL",  start_date:"2018-10-23 09:00", end_date:"2018-10-23 10:00","draggable":false, "resizeable": false}
 	]
 	  });
 });
