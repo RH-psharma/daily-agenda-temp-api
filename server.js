@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/get-scheduled-appointments/:shop-id/:date', function(req, res, next) {
+app.get('/get-scheduled-appointments/:shop-id/:selected-date', function(req, res, next) {
     
 	res.send({
 	   "msg": "Authentication successful",
