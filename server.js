@@ -24,12 +24,13 @@ app.use(function(req, res, next) {
 });
 
 app.get('/get-scheduled-appointments/:shop-id/:selected-date', function(req, res, next) {
-    
-	res.send({
+    res.send({
 	   "msg": "Authentication successful",
 	   "success": true,
 	   "data": [
-	    
+	    {text:"VM",    start_date:"2018-10-23 14:00", end_date:"2018-10-23 17:00",id:"100"},
+	    {text:"DOR", start_date:"2018-10-22 12:00", end_date:"2018-10-22 19:00",id:"200"},
+	    {text:"DEL",  start_date:"2018-10-23 09:00", end_date:"2018-10-23 10:00",id:"300"}
 	]
 	  });
 });
