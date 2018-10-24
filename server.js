@@ -23,6 +23,42 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get('/get-scheduled-appointments/:shop-id/:date', function(req, res, next) {
+    
+	res.send({
+	   "msg": "Authentication successful",
+	   "success": true,
+	   "data": [
+	    {
+			id : "1",
+			time: "12:00 AM - 1:00 PM",
+			client_name: "Marry Rose Apparcio",
+			phone_number: "014-4314-4567",
+			type: "Interior",
+			assigned_to: "Kate Moss",
+			note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		},
+		{
+			id : "2",
+			time: "12:00 AM - 1:00 PM",
+			client_name: "Keshia Michaelson",
+			phone_number: "014-4314-5555",
+			type: "Design",
+			assigned_to: "Kristy Miller",
+			note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		{
+			id : "3",
+			time: "3:00 PM - 4:00 PM",
+			client_name: "John Michaelson",
+			phone_number: "014-1314-1212",
+			type: "Design",
+			assigned_to: "John Doe",
+			note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+	]
+	  });
+});
 // app.use(bodyParser.json());
 app.get('/my-schedule/:id', function(req, res, next) {
     
