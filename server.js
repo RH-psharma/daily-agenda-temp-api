@@ -293,22 +293,22 @@ app.get('/daily-agenda/:date/:storeId', (req, res) => {
     let isScheduleAvailable = true;
   
        var dailyDate = [
-        { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":true, "resizeable": true, "text":"FL", "section_id":"5b7551d09a3a8a060074ad52"},
-        { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":true, "resizeable": true,"text":"MB", "section_id":"5b7551d09a3a8a060074ad52"},
-        { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":true, "resizeable": true,"text":"CC", "section_id":"5b7551d09a3a8a060074ad52"},
-        { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":true, "resizeable": true,"text":"TB", "section_id":"5b7551d09a3a8a060074ad52"},
-        { "start_date": `${date} 10:00`, "end_date": `${date} 14:00`, "draggable":true, "resizeable": true,"text":"FL", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 14:00`, "end_date": `${date} 15:30`, "draggable":true, "resizeable": true,"text":"GH", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 15:30`, "end_date": `${date} 16:00`, "draggable":true, "resizeable": true,"text":"MB", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 16:00`, "end_date": `${date} 17:00`, "draggable":true, "resizeable": true,"text":"CG", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`, "draggable":true, "resizeable": true,"text":"INTV", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 18:00`, "end_date": `${date} 19:00`, "draggable":true, "resizeable": true,"text":"EDU", "section_id":"5b7551d09a3a8a060074ad53"},
-        { "start_date": `${date} 09:00`, "end_date": `${date} 11:00`,"draggable":true, "resizeable": true, "text":"DEL", "section_id":"5b7551d09a3a8a060074ad55"},
-        { "start_date": `${date} 12:00`, "end_date": `${date} 14:00`,"draggable":true, "resizeable": true, "text":"HV", "section_id":"5b7551d09a3a8a060074ad55"},
-        { "start_date": `${date} 14:00`, "end_date": `${date} 14:30`,"draggable":true, "resizeable": true, "text":"MB", "section_id":"5b7551d09a3a8a060074ad55"},
-        { "start_date": `${date} 14:30`, "end_date": `${date} 16:30`,"draggable":true, "resizeable": true, "text":"INST", "section_id":"5b7551d09a3a8a060074ad55"},
-        { "start_date": `${date} 16:30`, "end_date": `${date} 17:00`,"draggable":true, "resizeable": true, "text":"DD", "section_id":"5b7551d09a3a8a060074ad55"},
-        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":true, "resizeable": true, "text":"CD", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 09:00`, "end_date": `${date} 12:00`, "draggable":false, "resizeable": false, "text":"FL", "section_id":"5b7551d09a3a8a060074ad52"},
+        { "start_date": `${date} 12:00`, "end_date": `${date} 12:30`, "draggable":false, "resizeable": false,"text":"MB", "section_id":"5b7551d09a3a8a060074ad52"},
+        { "start_date": `${date} 12:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"CC", "section_id":"5b7551d09a3a8a060074ad52"},
+        { "start_date": `${date} 16:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"TB", "section_id":"5b7551d09a3a8a060074ad52"},
+        { "start_date": `${date} 10:00`, "end_date": `${date} 14:00`, "draggable":false, "resizeable": false,"text":"FL", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 14:00`, "end_date": `${date} 15:30`, "draggable":false, "resizeable": false,"text":"GH", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 15:30`, "end_date": `${date} 16:00`, "draggable":false, "resizeable": false,"text":"MB", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 16:00`, "end_date": `${date} 17:00`, "draggable":false, "resizeable": false,"text":"CG", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`, "draggable":false, "resizeable": false,"text":"INTV", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 18:00`, "end_date": `${date} 19:00`, "draggable":false, "resizeable": false,"text":"EDU", "section_id":"5b7551d09a3a8a060074ad53"},
+        { "start_date": `${date} 09:00`, "end_date": `${date} 11:00`,"draggable":false, "resizeable": false, "text":"DEL", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 12:00`, "end_date": `${date} 14:00`,"draggable":false, "resizeable": false, "text":"HV", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 14:00`, "end_date": `${date} 14:30`,"draggable":false, "resizeable": false, "text":"MB", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 14:30`, "end_date": `${date} 16:30`,"draggable":false, "resizeable": false, "text":"INST", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 16:30`, "end_date": `${date} 17:00`,"draggable":false, "resizeable": false, "text":"DD", "section_id":"5b7551d09a3a8a060074ad55"},
+        { "start_date": `${date} 17:00`, "end_date": `${date} 18:00`,"draggable":false, "resizeable": false, "text":"CD", "section_id":"5b7551d09a3a8a060074ad55"},
     
     ];
   var onLeaveId = ["40"];
