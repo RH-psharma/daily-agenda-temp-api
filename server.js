@@ -23,6 +23,37 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get('/get-available-associates/:shopid/:selecteddate', function(req, res, next) {
+	res.send({
+	   "msg": "Authentication successful",
+	   "success": true,
+	   "data": [
+	{
+		"JobGroup":"Design Experience",
+		"Associates": {
+		  	{id:40, name:`John Doe`, on_floor_time:`7:00 PM - 9:00 PM`},
+		    {id:50, name:`Kristy Miller`, on_floor_time:`6:00 PM - 9:00 PM`},
+		    {id:60, name:`Linda Brown`, on_floor_time:`7:30 PM - 8:00 PM`},
+		    {id:70, name:`George Luca`, on_floor_time:`6:30 PM - 9:00 PM`},
+		    {id:80, name:`Kate Moss`, on_floor_time:`7:00 PM - 9:00 PM`},
+		    {id:90, name:`Dian Fossey`, on_floor_time:`8:00 PM - 9:00 PM`}
+		}
+	},
+	{
+		"JobGroup":"Design Team",
+		"Associates": {
+		  	{id:40, name:`John Doe`, on_floor_time:`7:00 PM - 9:00 PM`},
+		    {id:50, name:`Kristy Miller`, on_floor_time:`6:00 PM - 9:00 PM`},
+		    {id:60, name:`Linda Brown`, on_floor_time:`7:30 PM - 8:00 PM`},
+		    {id:70, name:`George Luca`, on_floor_time:`6:30 PM - 9:00 PM`},
+		    {id:80, name:`Kate Moss`, on_floor_time:`7:00 PM - 9:00 PM`},
+		    {id:90, name:`Dian Fossey`, on_floor_time:`8:00 PM - 9:00 PM`}
+		}
+	}
+]
+	});
+});
+
 app.get('/get-scheduled-appointments/:shopid/:selecteddate', function(req, res, next) {
     res.send({
 	   "msg": "Authentication successful",
