@@ -30,12 +30,12 @@ app.get('/get-available-associates/:shopid/:selecteddate', function(req, res, ne
 	   "data": [
 	
 		
-		  	{id:40, name:`John Doe`, on_floor_time:`7:00 PM - 9:00 PM`},
-		    {id:50, name:`Kristy Miller`, on_floor_time:`6:00 PM - 9:00 PM`},
-		    {id:60, name:`Linda Brown`, on_floor_time:`7:30 PM - 8:00 PM`},
-		    {id:70, name:`George Luca`, on_floor_time:`6:30 PM - 9:00 PM`},
-		    {id:80, name:`Kate Moss`, on_floor_time:`7:00 PM - 9:00 PM`},
-		    {id:90, name:`Dian Fossey`, on_floor_time:`8:00 PM - 9:00 PM`}
+		  	{id:40, details:`John Doe 7:00 PM - 9:00 PM`},
+		    {id:50, details:`Kristy Miller 6:00 PM - 9:00 PM`},
+		    {id:60, details:`Linda Brown 7:30 PM - 8:00 PM`},
+		    {id:70, details:`George Luca 6:30 PM - 9:00 PM`},
+		    {id:80, details:`Kate Moss 7:00 PM - 9:00 PM`},
+		    {id:90, details:`Dian Fossey 8:00 PM - 9:00 PM`}
 		
 ]
 	});
