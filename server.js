@@ -23,6 +23,14 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get('/getUnreadNotificationCount/:id', function(req, res, next) {
+	res.send({
+	   "msg": "count",
+	   "success": true,
+		"data":4
+	});
+});
+
 app.get('/getReadNotificationCount/:id', function(req, res, next) {
 	res.send({
 	   "msg": "count",
