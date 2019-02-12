@@ -212,64 +212,33 @@ app.get('/getAllNotifications/:id/:page', function(req, res, next) {
 		title:"New Assigned Activity",
 		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
 		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-08 16:40",
-		status: "read"
+		datetime: "2019-02-012 16:40",
+		status: "read",
+		id: 1
 	},
 	{
 		title:"New Assigned Activity",
 		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
 		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-08 12:45",
-		status: "unread"
-	},
-	{
-		title:"New Assigned Activity",
-		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
-		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-08 11:45",
-		status: "unread"
-	},
-	{
-		title:"Employee on leave",
-		msg: "Rahul Dabhi is on leave. Please review their activities for the day and reassign as needed.",
-		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-07 16:45",
-		status: "read"
-	},
-	{
-		title:"New Assigned Activity",
-		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
-		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-07 16:40",
-		status: "read"
-	},
-	{
-		title:"New Assigned Activity",
-		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
-		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-08 12:45",
-		status: "unread"
+		datetime: "2019-02-12 12:45",
+		status: "unread",
+		id: 2
 	},
 	{
 		title:"New Assigned Activity",
 		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
 		storeId: "5bf2a818cdbbc70f7924cc71",
 		datetime: "2019-02-08 11:45",
-		status: "unread"
+		status: "unread",
+		id: 3
 	},
 	{
 		title:"Employee on leave",
 		msg: "Rahul Dabhi is on leave. Please review their activities for the day and reassign as needed.",
 		storeId: "5bf2a818cdbbc70f7924cc71",
 		datetime: "2019-02-07 16:45",
-		status: "read"
-	},
-	{
-		title:"New Assigned Activity",
-		msg: "A new appointment has been assigned to you. Select View Appointment for details.",
-		storeId: "5bf2a818cdbbc70f7924cc71",
-		datetime: "2019-02-07 16:40",
-		status: "read"
+		status: "read",
+		id: 4
 	}
 ]
 	});
